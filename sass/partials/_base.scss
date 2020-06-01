@@ -1,20 +1,10 @@
-:root {
-  --blue-dark: #031f37;
-  --blue-mid: #5d8ba5;
-  --blue-light: #a4becd;
-  --dark: #272a31;
-  --gray: #d3d3d3;
-}
-
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
   text-decoration: none;
   list-style: none;
-  color: var(--dark);
+  color: $dark;
 }
 
 html {

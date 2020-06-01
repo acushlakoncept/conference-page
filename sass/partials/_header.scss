@@ -1,0 +1,95 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url(imgs/conference-big.jpg) no-repeat;
+  background-size: cover;
+  background-position: left top;
+
+  .top-bar {
+    background-image: linear-gradient(120deg, $black 50%, $blue-dark 51%);
+    height: 2.5rem;
+
+    &__menu {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 0.5rem;
+      width: 80%;
+      margin: auto;
+    }
+
+    &__list {
+      margin-right: 1rem;
+    }
+
+    &__links {
+      color: $gray;
+
+      &:hover {
+        color: $blue-light;
+      }
+
+      .fab {
+        color: #fff;
+
+        &:hover {
+          color: $blue-light;
+        }
+      }
+    }
+  }
+
+  .logo-img {
+    width: auto;
+    height: 6.5rem;
+  }
+
+  .nav {
+    background-color: $blue-light;
+
+    &__container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list {
+      padding-right: 1rem;
+
+      &:last-child .nav__links {
+        border: 2px solid $blue-dark;
+        padding: 0.5rem;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $blue-dark;
+          color: $blue-light;
+        }
+      }
+    }
+
+    &__links {
+      &,
+      &:link,
+      &:visited {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        border-bottom: 1px solid transparent;
+        transform: translateY(0);
+        transition: all 0.3s;
+      }
+
+      &:active,
+      &:hover {
+        color: $blue-dark;
+        transform: translateY(-2px);
+        border-bottom: 1px dotted $blue-dark;
+      }
+    }
+  }
+}

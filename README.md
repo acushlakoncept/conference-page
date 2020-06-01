@@ -12,6 +12,7 @@ Capstone Project
 - CSS
 - Stickler for CSS validation
 - FontAwesome
+- SASS
 
 ## Live Demo
 
