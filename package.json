@@ -1,0 +1,32 @@
+{
+  "name": "conference-page",
+  "version": "1.0.0",
+  "description": "DEF CON Uyo Nigeria Conference Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acushlakoncept/conference-page.git"
+  },
+  "keywords": [
+    "conference",
+    "submit",
+    "css",
+    "html",
+    "defcon",
+    "uyo",
+    "nigeria",
+    "sass"
+  ],
+  "author": "Uduak Essien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acushlakoncept/conference-page/issues"
+  },
+  "homepage": "https://github.com/acushlakoncept/conference-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
