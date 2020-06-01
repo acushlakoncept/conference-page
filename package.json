@@ -4,7 +4,7 @@
   "description": "DEF CON Uyo Nigeria Conference Website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "repository": {
     "type": "git",
