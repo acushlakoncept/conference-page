@@ -1,0 +1,25 @@
+.section-heading {
+  color: $dark;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.section-button {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: $blue-dark;
+  color: $blue-light;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #fff;
+  }
+}

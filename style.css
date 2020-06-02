@@ -128,19 +128,34 @@ body {
       padding-left: 1rem;
       padding-right: 1rem; }
 
+.section-heading {
+  color: #272a31;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  position: relative; }
+
+.section-button {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #031f37;
+  color: #a4becd;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .section-button:hover {
+    color: #fff; }
+
 .program-section {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(164, 190, 205, 0.3)), url(imgs/brilliant.png);
   padding: 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .program-section .section-heading {
-    color: #272a31;
-    font-size: 4rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-bottom: 2rem;
-    position: relative; }
   .program-section .program-section__events {
     width: 80%;
     margin: 3.5rem;
@@ -168,16 +183,43 @@ body {
       color: #031f37;
       font-size: 3rem;
       font-weight: 300; }
-  .program-section .section-button {
-    font-size: 1.5rem;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    text-transform: uppercase;
-    border: none;
-    background-color: #031f37;
-    color: #a4becd;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    transition: all 0.3s; }
-    .program-section .section-button:hover {
-      color: #fff; }
+    .program-section .program-section__events-info {
+      font-weight: 300; }
+
+.speaker-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0; }
+  .speaker-section-container {
+    width: 80%;
+    margin: 0 auto; }
+  .speaker-section .speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 32rem);
+    grid-gap: 3rem; }
+    .speaker-section .speakers__speaker {
+      display: flex;
+      justify-content: center; }
+      .speaker-section .speakers__speaker--photo {
+        height: 12rem;
+        border-radius: 2rem;
+        transition: all 0.4s; }
+        .speaker-section .speakers__speaker--photo:hover {
+          transform: translateY(-1px) scale(1.1); }
+      .speaker-section .speakers__speaker--info {
+        align-self: center;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+      .speaker-section .speakers__speaker--name {
+        font-weight: 700;
+        color: #031f37; }
+      .speaker-section .speakers__speaker--profile {
+        font-weight: 100;
+        font-style: italic;
+        color: #888; }
+        .speaker-section .speakers__speaker--profile:hover {
+          color: #555; }
+      .speaker-section .speakers__speaker--bio {
+        text-align: justify; }
