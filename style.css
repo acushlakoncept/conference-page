@@ -127,3 +127,57 @@ body {
       background-color: rgba(3, 31, 55, 0.85);
       padding-left: 1rem;
       padding-right: 1rem; }
+
+.program-section {
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(164, 190, 205, 0.3)), url(imgs/brilliant.png);
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .program-section .section-heading {
+    color: #272a31;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    position: relative; }
+  .program-section .program-section__events {
+    width: 80%;
+    margin: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem; }
+    .program-section .program-section__events--item {
+      background: rgba(164, 190, 205, 0.2);
+      font-size: 2rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out; }
+      .program-section .program-section__events--item:hover {
+        background: rgba(164, 190, 205, 0.4);
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.2); }
+    .program-section .program-section__events-icon {
+      font-size: 6rem; }
+      .program-section .program-section__events-icon .fa {
+        color: rgba(3, 31, 55, 0.8); }
+    .program-section .program-section__events-title {
+      color: #031f37;
+      font-size: 3rem;
+      font-weight: 300; }
+  .program-section .section-button {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #031f37;
+    color: #a4becd;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .program-section .section-button:hover {
+      color: #fff; }

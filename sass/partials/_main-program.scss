@@ -1,0 +1,73 @@
+.program-section {
+  background: linear-gradient(105deg, rgba(#fff, 0.4), rgba($blue-light, 0.3)),
+    url(imgs/brilliant.png);
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-heading {
+    color: $dark;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  .program-section__events {
+    width: 80%;
+    margin: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    &--item {
+      background: rgba($blue-light, 0.2);
+      font-size: 2rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: rgba($blue-light, 0.4);
+        box-shadow: 0 1px 0.5rem rgba($black, 0.2);
+      }
+    }
+
+    &-icon {
+      font-size: 6rem;
+
+      .fa {
+        color: rgba($blue-dark, 0.8);
+      }
+    }
+
+    &-title {
+      color: $blue-dark;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+  }
+
+  .section-button {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: $blue-dark;
+    color: $blue-light;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
