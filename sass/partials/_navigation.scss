@@ -1,0 +1,133 @@
+.nav {
+  background-color: $blue-light;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mobile {
+    display: inline-block;
+    align-items: center;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    &--check {
+      display: none;
+    }
+
+    &--label {
+    }
+
+    &--btn,
+    &--cancel {
+      position: absolute;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    &--btn {
+      right: 1.4rem;
+      top: 0.7rem;
+      font-size: 4.5rem;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      transition: all 0.5s;
+    }
+
+    &--cancel {
+      z-index: 1111;
+      right: 4.2rem;
+      top: 1.6rem;
+      font-size: 4rem;
+      color: #fff;
+      padding: 0.4rem 0.9rem;
+      transform: translateX(2rem);
+      transition: all 0.5s ease;
+    }
+
+    &--sidebar {
+      position: fixed;
+      height: 100vh;
+      //   right: -100%;
+      top: 0;
+      right: 0;
+      background: $blue-dark;
+      width: 30rem;
+      transition: all 0.5s ease;
+    }
+
+    &--header {
+      color: whitesmoke;
+      text-align: center;
+      background: #063146;
+      user-select: none;
+      line-height: 8rem;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+
+    &--links {
+      display: block;
+      color: white;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+      padding-left: 40px;
+      line-height: 65px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid black;
+      transition: all 0.5s;
+    }
+  }
+
+  &__menu {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    padding-right: 1rem;
+
+    &:last-child .nav__links {
+      border: 2px solid $blue-dark;
+      padding: 0.5rem;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: $blue-dark;
+        color: $blue-light;
+      }
+    }
+  }
+
+  &__links {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      border-bottom: 1px solid transparent;
+      transform: translateY(0);
+      transition: all 0.3s;
+    }
+
+    &.active,
+    &:active,
+    &:hover {
+      color: $blue-dark;
+      transform: translateY(-2px);
+      border-bottom: 1px dotted $blue-dark;
+    }
+  }
+}
