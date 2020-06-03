@@ -95,6 +95,7 @@
         transition: all 0.3s;
       }
 
+      &.active,
       &:active,
       &:hover {
         color: $blue-dark;
@@ -189,6 +190,18 @@
       background-color: rgba($blue-dark, 0.85);
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+
+    &-support {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+
+      &__mail {
+        color: $blue-light;
+        font-weight: 100;
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -76,7 +76,7 @@ body {
       border-bottom: 1px solid transparent;
       transform: translateY(0);
       transition: all 0.3s; }
-    .header .nav__links:active, .header .nav__links:hover {
+    .header .nav__links.active, .header .nav__links:active, .header .nav__links:hover {
       color: #031f37;
       transform: translateY(-2px);
       border-bottom: 1px dotted #031f37; }
@@ -141,6 +141,14 @@ body {
       background-color: rgba(3, 31, 55, 0.85);
       padding-left: 1rem;
       padding-right: 1rem; }
+    .header .heading-support {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-top: 2rem; }
+      .header .heading-support__mail {
+        color: #a4becd;
+        font-weight: 100;
+        font-size: 2rem; }
 
 .section-heading {
   color: #272a31;
