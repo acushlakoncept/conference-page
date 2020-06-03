@@ -2,7 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9dfe44d9-6bf9-4cd1-84f0-47825b00fcff/deploy-status)](https://app.netlify.com/sites/defconuyo/deploys)
 
-This project is a complete design on the DEF CON Uyo Conference page (Fictional). A design prototype from Cindy Shin [CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+> This project is my HTML & CSS Capstone Project in Microverse.
+
+The project is a complete design on the DEF CON Uyo Conference page (Fictional). A design prototype from Cindy Shin [CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 Complete design of the index, about and ticket page designed using Grid, Flexbox, and Position alongside with other CSS concepts.
 
