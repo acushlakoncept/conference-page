@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | DEF CON Uyo - Nigeria 2020</title>
+    <title>Tickets | DEF CON Uyo - Nigeria 2020</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -72,103 +79,169 @@
     <section class="program-section about-section ticket-section" id="tickets">
       <h2 class="section-heading">Tickets</h2>
 
-      <div class="about-section__content">
+      <div class="about-section__content ticket-section__content">
         <p class="ticket-section__step">
-          <span class="ticket-section__step-guide">Step 1</span>
+          <span class="ticket-section__step-guide">Step 1: </span>
           Please select the day when you want to join DEF CON Uyo - Nigeria 2020
         </p>
 
         <div class="ticket-section__price">
-          <table class="ticket-section__price--table">
-            <thead>
-              <th>Ticket</th>
-              <th>1-Day-Ticket</th>
-              <th>2-Day-Ticket</th>
-              <th>DEFCON Partners</th>
-            </thead>
-            <tr>
-              <td>Date</td>
-              <td>12 Sept.(Fri)</td>
-              <td>
-                <table>
-                  <tr>
-                    <td>13 Sept.(Sat)</td>
-                    <td>12-13 Sept.(Fri-Sat)</td>
-                  </tr>
-                </table>
-              </td>
-              <td>12-13 Sept.(Fri-Sat)</td>
-            </tr>
-            <tr>
-              <td>Normal</td>
-              <td>
-                <label for="price" class="ticket-section__price--label"
-                  >₦50,000</label
-                >
-                <input type="radio" name="normal-price" id="price" />
-              </td>
-              <td>
-                <table>
-                  <tr>
-                    <td>
-                      <label for="price" class="ticket-section__price--label"
-                        >₦50,000</label
-                      >
-                      <input type="radio" name="normal-price" id="price" />
-                    </td>
-                    <td>
-                      <label for="price" class="ticket-section__price--label"
-                        >₦80,000</label
-                      >
-                      <input type="radio" name="normal-price" id="price" />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <label for="price" class="ticket-section__price--label"
-                  >₦0,000</label
-                >
-                <input type="radio" name="normal-price" id="price" />
-              </td>
-            </tr>
+          <div class="ticket-section__price--container">
+            <table
+              class="ticket-section__price--table table table-condensed table-hover table-bordered"
+            >
+              <thead>
+                <th>Ticket</th>
+                <th>1-Day-Ticket</th>
+                <th>2-Day-Ticket</th>
+                <th>&nbsp;</th>
+                <th>DEFCON Partners</th>
+              </thead>
+              <tr>
+                <td>Date</td>
+                <td>12 Sept.(Fri)</td>
+                <td>13 Sept.(Sat)</td>
+                <td>12-13 Sept.(Fri-Sat)</td>
 
-            <tr>
-              <td>Students</td>
-              <td>
-                <label for="price" class="ticket-section__price--label"
-                  >₦30,000</label
-                >
-                <input type="radio" name="student-price" id="price" />
-              </td>
-              <td>
-                <table>
-                  <tr>
-                    <td>
-                      <label for="price" class="ticket-section__price--label"
-                        >₦30,000</label
-                      >
-                      <input type="radio" name="student-price" id="price" />
-                    </td>
-                    <td>
-                      <label for="price" class="ticket-section__price--label"
-                        >₦50,000</label
-                      >
-                      <input type="radio" name="student-price" id="price" />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <label for="price" class="ticket-section__price--label"
-                  >₦0,000</label
-                >
-                <input type="radio" name="student-price" id="price" />
-              </td>
-            </tr>
-          </table>
+                <td>12-13 Sept.(Fri-Sat)</td>
+              </tr>
+              <tr>
+                <td>Normal</td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦50,000</label
+                  >
+                  <input type="radio" name="normal-price" id="price" />
+                </td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦50,000</label
+                  >
+                  <input type="radio" name="normal-price" id="price" />
+                </td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦80,000</label
+                  >
+                  <input type="radio" name="normal-price" id="price" />
+                </td>
+
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦0,000</label
+                  >
+                  <input type="radio" name="normal-price" id="price" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Students</td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦30,000</label
+                  >
+                  <input type="radio" name="student-price" id="price" />
+                </td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦30,000</label
+                  >
+                  <input type="radio" name="student-price" id="price" />
+                </td>
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦50,000</label
+                  >
+                  <input type="radio" name="student-price" id="price" />
+                </td>
+
+                <td>
+                  <label
+                    for="price"
+                    class="ticket-section__price--label text-danger"
+                    >₦0,000</label
+                  >
+                  <input type="radio" name="student-price" id="price" />
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="lunch-section about-section ticket-section" id="tickets">
+      <div class="lunch-section__divider"></div>
+      <h2 class="section-heading">Select Your Lunch</h2>
+      <p class="ticket-section__step">
+        <span class="ticket-section__step-guide">Step 1: </span>
+        Please select your lunch preference for today's event.
+      </p>
+      <div class="lunch-section__menu">
+        <div class="lunch-section__menu--titlebar">
+          <h4 class="lunch-section__menu--title">Tea Break</h4>
+        </div>
+        <form action="#" class="lunch-section__menu--form">
+          <ul class="lunch-section__menu--item">
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="coffee"
+                >Coffee & Toasted Bread</label
+              ><input type="radio" id="coffee" name="menu1" />
+            </li>
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="tea"
+                >Tea & Toasted Bread</label
+              ><input type="radio" id="tea" name="menu1" />
+            </li>
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="bread"
+                >Bread and Fried Egg</label
+              ><input type="radio" id="bread" name="menu1" />
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="lunch-section__menu">
+        <div class="lunch-section__menu--titlebar">
+          <h4 class="lunch-section__menu--title">After Breakout Session</h4>
+        </div>
+        <form action="#" class="lunch-section__menu--form">
+          <ul class="lunch-section__menu--item">
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="rice"
+                >Fried Rice</label
+              ><input type="radio" id="rice" name="menu2" />
+            </li>
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="jellof"
+                >Jellof Rice</label
+              ><input type="radio" id="jellof" name="menu2" />
+            </li>
+            <li class="lunch-section__menu--list">
+              <label class="lunch-section__menu--label" for="yam"
+                >Yam and Egg Sauce</label
+              ><input type="radio" id="yam" name="menu2" />
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <button class="section-button">Submit Request &rarr;</button>
     </section>
 
     <footer class="footer otherpage-footer">

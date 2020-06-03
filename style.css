@@ -18,6 +18,9 @@ body {
   line-height: 1.4;
   box-sizing: border-box; }
 
+a {
+  color: #031f37; }
+
 .header {
   width: 100%;
   height: 100vh;
@@ -295,6 +298,66 @@ body {
   transition: all 0.4s; }
   .partners__photo:hover {
     filter: grayscale(0); }
+
+.ticket-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.ticket-section__step {
+  margin: 3rem 0;
+  padding: 1.2rem;
+  display: inline-flex;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid #a4becd;
+  border-radius: 20rem;
+  font-weight: 300; }
+  .ticket-section__step-guide {
+    color: red;
+    font-weight: bold;
+    padding-right: 1rem; }
+
+.ticket-section__price {
+  background-color: orangered;
+  padding: 0.8rem; }
+  .ticket-section__price--container {
+    background-color: #fff;
+    padding: 0.5rem; }
+  .ticket-section__price--table {
+    font-size: 1.2rem; }
+    .ticket-section__price--table tr td,
+    .ticket-section__price--table tr th {
+      text-align: center; }
+  .ticket-section__price--label {
+    display: block; }
+
+.lunch-section {
+  padding: 6rem 0; }
+  .lunch-section__menu {
+    border: 1px solid #a4becd;
+    max-width: 95%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem; }
+    .lunch-section__menu--titlebar {
+      background-color: #eee;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1.5rem; }
+    .lunch-section__menu--title {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 100;
+      text-align: center; }
+    .lunch-section__menu--form {
+      padding: 1rem; }
+    .lunch-section__menu--item {
+      display: flex;
+      justify-content: center; }
+    .lunch-section__menu--list {
+      padding-right: 2rem; }
+    .lunch-section__menu--label {
+      padding-right: 1rem; }
 
 .footer {
   padding: 8rem 0;
