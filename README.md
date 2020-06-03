@@ -2,8 +2,6 @@
 
 Capstone Project
 
-
-
 ![screenshot](./#)
 
 ## Built With
@@ -54,5 +52,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Project originally taken from The Odin Project
+- UI Design Credits goes to [Cindy Shin - CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Project inspired by Microverse Program
