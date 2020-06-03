@@ -10,6 +10,10 @@
   background-size: cover;
   background-position: left top;
 
+  &.no-image {
+    height: 7.5rem;
+  }
+
   .top-bar {
     display: none;
     background-image: linear-gradient(120deg, $black 50%, $blue-dark 51%);

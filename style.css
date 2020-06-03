@@ -24,6 +24,8 @@ body {
   background: linear-gradient(105deg, rgba(3, 31, 55, 0.95) 50%, rgba(164, 190, 205, 0.3) 80%), url(imgs/hero-big.jpg) no-repeat;
   background-size: cover;
   background-position: left top; }
+  .header.no-image {
+    height: 7.5rem; }
   .header .top-bar {
     display: none;
     background-image: linear-gradient(120deg, #000 50%, #031f37 51%);
@@ -152,7 +154,7 @@ body {
 
 .section-heading {
   color: #272a31;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 2rem;

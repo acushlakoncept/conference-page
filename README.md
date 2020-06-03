@@ -28,6 +28,20 @@ $ cd <folder>
 $ git clone https://github.com/acushlakoncept/conference-page.git
 ```
 
+To install the required sass node modules
+
+```
+$ npm install
+
+```
+
+Run SASS on command line to automatically compile to style.css
+
+```
+$ npm run compile:sass
+
+```
+
 ## Future Implementations
 
 > Adding backend
