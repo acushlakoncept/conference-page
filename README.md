@@ -10,9 +10,9 @@ The whole idea of modularizing the styles was indeed a great take away in this p
 
 I used the CSS checkbox trick to implement the mobile menu.
 
-I have also included the manifest.json file for the web, which holds some metadata for the site info and tells the browser more information about the application.
+I have also included the manifest.json file for the web, which holds some metadata for the site info and tells the browser more information about the application. You can easily generate on [here](https://tomitm.github.io/appmanifest/)
 
-![screenshot](./#)
+![screenshot](./imgs/screenshot.jpg)
 
 ## Built With
 
