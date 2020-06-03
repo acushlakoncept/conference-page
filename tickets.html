@@ -90,9 +90,9 @@
             </label>
 
             <div class="nav__mobile--sidebar">
-              <header class="nav__mobile--header">
+              <div class="nav__mobile--header">
                 <span>Quick Links</span>
-              </header>
+              </div>
               <ul class="nav__mobile--menu">
                 <li class="nav__mobile--list">
                   <a href="about.html" class="nav__mobile--links">About</a>
@@ -163,100 +163,108 @@
               class="ticket-section__price--table table table-condensed table-hover table-bordered"
             >
               <thead>
-                <th>Ticket</th>
-                <th>1-Day-Ticket</th>
-                <th>2-Day-Ticket</th>
-                <th>&nbsp;</th>
-                <th>DEFCON Partners</th>
+                <tr>
+                  <th>Ticket</th>
+                  <th>1-Day-Ticket</th>
+                  <th>2-Day-Ticket</th>
+                  <th>&nbsp;</th>
+                  <th>DEFCON Partners</th>
+                </tr>
               </thead>
-              <tr>
-                <td>Date</td>
-                <td>12 Sept.(Fri)</td>
-                <td>13 Sept.(Sat)</td>
-                <td>12-13 Sept.(Fri-Sat)</td>
+              <tbody>
+                <tr>
+                  <td>Date</td>
+                  <td>12 Sept.(Fri)</td>
+                  <td>13 Sept.(Sat)</td>
+                  <td>12-13 Sept.(Fri-Sat)</td>
 
-                <td>12-13 Sept.(Fri-Sat)</td>
-              </tr>
-              <tr>
-                <td>Normal</td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦50,000</label
-                  >
-                  <input type="radio" name="normal-price" id="price" />
-                </td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦50,000</label
-                  >
-                  <input type="radio" name="normal-price" id="price" />
-                </td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦80,000</label
-                  >
-                  <input type="radio" name="normal-price" id="price" />
-                </td>
+                  <td>12-13 Sept.(Fri-Sat)</td>
+                </tr>
+                <tr>
+                  <td>Normal</td>
+                  <td>
+                    <label
+                      for="normal-price"
+                      class="ticket-section__price--label text-danger"
+                      >₦50,000</label
+                    >
+                    <input type="radio" name="normal-price" id="normal-price" />
+                  </td>
+                  <td>
+                    <label
+                      for="normal-price2"
+                      class="ticket-section__price--label text-danger"
+                      >₦50,000</label
+                    >
+                    <input
+                      type="radio"
+                      name="normal-price"
+                      id="normal-price2"
+                    />
+                  </td>
+                  <td>
+                    <label
+                      for="price"
+                      class="ticket-section__price--label text-danger"
+                      >₦80,000</label
+                    >
+                    <input type="radio" name="normal-price" id="price" />
+                  </td>
 
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦0,000</label
-                  >
-                  <input type="radio" name="normal-price" id="price" />
-                </td>
-              </tr>
+                  <td>
+                    <label
+                      for="w-price"
+                      class="ticket-section__price--label text-danger"
+                      >₦0,000</label
+                    >
+                    <input type="radio" name="normal-price" id="w-price" />
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Students</td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦30,000</label
-                  >
-                  <input type="radio" name="student-price" id="price" />
-                </td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦30,000</label
-                  >
-                  <input type="radio" name="student-price" id="price" />
-                </td>
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦50,000</label
-                  >
-                  <input type="radio" name="student-price" id="price" />
-                </td>
+                <tr>
+                  <td>Students</td>
+                  <td>
+                    <label
+                      for="s-price"
+                      class="ticket-section__price--label text-danger"
+                      >₦30,000</label
+                    >
+                    <input type="radio" name="student-price" id="s-price" />
+                  </td>
+                  <td>
+                    <label
+                      for="s-price-2"
+                      class="ticket-section__price--label text-danger"
+                      >₦30,000</label
+                    >
+                    <input type="radio" name="student-price" id="s-price-2" />
+                  </td>
+                  <td>
+                    <label
+                      for="s-price-3"
+                      class="ticket-section__price--label text-danger"
+                      >₦50,000</label
+                    >
+                    <input type="radio" name="student-price" id="s-price-3" />
+                  </td>
 
-                <td>
-                  <label
-                    for="price"
-                    class="ticket-section__price--label text-danger"
-                    >₦0,000</label
-                  >
-                  <input type="radio" name="student-price" id="price" />
-                </td>
-              </tr>
+                  <td>
+                    <label
+                      for="s-price-4"
+                      class="ticket-section__price--label text-danger"
+                      >₦0,000</label
+                    >
+                    <input type="radio" name="student-price" id="s-price-4" />
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="lunch-section about-section ticket-section" id="tickets">
+    <section class="lunch-section about-section ticket-section" id="lunch">
       <div class="lunch-section__divider"></div>
       <h2 class="section-heading">Select Your Lunch</h2>
       <p class="ticket-section__step">
