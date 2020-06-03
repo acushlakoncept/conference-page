@@ -223,3 +223,27 @@ body {
           color: #555; }
       .speaker-section .speakers__speaker--bio {
         text-align: justify; }
+
+.partners-section {
+  background: linear-gradient(rgba(164, 190, 205, 0.4), rgba(3, 31, 55, 0.5));
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.partners-container {
+  width: 80%;
+  margin: 0 auto; }
+
+.partners__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.partners__photo {
+  width: 18rem;
+  filter: grayscale(100%);
+  transition: all 0.4s; }
+  .partners__photo:hover {
+    filter: grayscale(0); }
