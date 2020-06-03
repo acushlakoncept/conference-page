@@ -175,16 +175,13 @@ body {
       padding: 6rem 0; } }
   .program-section .program-section__events {
     width: 100%;
+    margin-bottom: 3.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem; }
     @media (min-width: 768px) {
       .program-section .program-section__events {
-        width: 80%;
-        margin: 3.5rem;
-        grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 992px) {
-      .program-section .program-section__events {
+        width: 85%;
         grid-template-columns: repeat(4, 1fr); } }
     .program-section .program-section__events--item {
       background: rgba(164, 190, 205, 0.2);
