@@ -37,42 +37,59 @@ a {
         display: none; } }
     .nav__mobile--check {
       display: none; }
-    .nav__mobile--btn, .nav__mobile--cancel {
-      position: absolute;
-      cursor: pointer;
-      border-radius: 3px; }
-    .nav__mobile--btn {
-      right: 1.4rem;
-      top: 0.7rem;
-      font-size: 4.5rem;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      transition: all 0.5s; }
-    .nav__mobile--cancel {
-      z-index: 1111;
-      right: 4.2rem;
-      top: 1.6rem;
-      font-size: 4rem;
-      color: #fff;
-      padding: 0.4rem 0.9rem;
-      transform: translateX(2rem);
-      transition: all 0.5s ease; }
+    .nav__mobile--icon {
+      position: relative;
+      margin-top: 3.5rem; }
+      .nav__mobile--icon, .nav__mobile--icon::before, .nav__mobile--icon::after {
+        width: 3rem;
+        height: 2px;
+        background-color: #031f37;
+        display: inline-block;
+        z-index: 1000;
+        transition: all 0.2s; }
+      .nav__mobile--icon::before, .nav__mobile--icon::after {
+        content: "";
+        position: absolute;
+        left: 0; }
+      .nav__mobile--icon::before {
+        top: -0.8rem; }
+      .nav__mobile--icon::after {
+        top: 0.8rem; }
+    .nav__mobile--label:hover .nav__mobile--icon::before {
+      top: -1rem; }
+    .nav__mobile--label:hover .nav__mobile--icon::after {
+      top: 1rem; }
+    .nav__mobile--check:checked + .nav__mobile--label .nav__mobile--icon {
+      background-color: transparent; }
+    .nav__mobile--check:checked + .nav__mobile--label .nav__mobile--icon::before {
+      background-color: #fff;
+      transform: rotate(135deg);
+      top: 0; }
+    .nav__mobile--check:checked + .nav__mobile--label .nav__mobile--icon::after {
+      background-color: #fff;
+      transform: rotate(-135deg);
+      top: 0; }
     .nav__mobile--sidebar {
       position: fixed;
       height: 100vh;
+      right: -100%;
       top: 0;
-      right: 0;
       background: #031f37;
       width: 30rem;
+      z-index: 999;
       transition: all 0.5s ease; }
+    .nav__mobile--check:checked ~ .nav__mobile--sidebar {
+      right: 0; }
     .nav__mobile--header {
-      color: whitesmoke;
       text-align: center;
-      background: #063146;
+      background: #0a5275;
       user-select: none;
       line-height: 8rem;
       text-transform: uppercase;
       font-size: 2.5rem; }
+      .nav__mobile--header span {
+        color: whitesmoke;
+        margin-left: -4rem; }
     .nav__mobile--links {
       display: block;
       color: white;
