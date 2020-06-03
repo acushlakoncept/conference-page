@@ -59,9 +59,9 @@ $ npm run compile:sass
 
 ## Future Implementations
 
-> Adding backend
+> Detailed Program Itinerary Page
 
-## Authors
+## Author
 
 **Uduak Essien**
 
