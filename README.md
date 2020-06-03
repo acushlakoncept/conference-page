@@ -1,4 +1,4 @@
-# Conference Page
+# DEF CON Uyo - Nigeria Conference Page
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9dfe44d9-6bf9-4cd1-84f0-47825b00fcff/deploy-status)](https://app.netlify.com/sites/defconuyo/deploys)
 
