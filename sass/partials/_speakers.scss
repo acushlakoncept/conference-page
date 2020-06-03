@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 0;
+  padding: 6rem 2rem;
+
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
 
   &-container {
     width: 80%;
@@ -11,8 +15,12 @@
 
   .speakers {
     display: grid;
-    grid-template-columns: repeat(2, 32rem);
+    grid-template-columns: 1fr;
     grid-gap: 3rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 32rem);
+    }
 
     &__speaker {
       display: flex;

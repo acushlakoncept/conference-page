@@ -7,7 +7,10 @@
   color: #272a31; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 50%; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -22,8 +25,12 @@ body {
   background-size: cover;
   background-position: left top; }
   .header .top-bar {
+    display: none;
     background-image: linear-gradient(120deg, #000 50%, #031f37 51%);
     height: 2.5rem; }
+    @media (min-width: 768px) {
+      .header .top-bar {
+        display: block; } }
     .header .top-bar__menu {
       display: flex;
       justify-content: flex-end;
@@ -52,7 +59,8 @@ body {
       justify-content: space-between; }
     .header .nav__menu {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-wrap: wrap; }
     .header .nav__list {
       padding-right: 1rem; }
       .header .nav__list:last-child .nav__links {
@@ -95,7 +103,7 @@ body {
     .header .heading-primary {
       position: relative;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 8rem;
+      font-size: 5rem;
       font-weight: 900;
       line-height: 1.05;
       letter-spacing: -2px;
@@ -103,6 +111,9 @@ body {
       color: #000;
       text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
       z-index: 50; }
+      @media (min-width: 768px) {
+        .header .heading-primary {
+          font-size: 8rem; } }
       .header .heading-primary::after {
         content: "DEF CON UYO - NIGERIA 2020";
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(164, 190, 205, 0.6)), url(imgs/dcsite-bg-ret.jpg);
@@ -117,10 +128,13 @@ body {
     .header .heading-theme {
       font-size: 2rem; }
     .header .heading-date {
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: 700;
       color: #fff;
       letter-spacing: -2px; }
+      @media (min-width: 768px) {
+        .header .heading-date {
+          font-size: 5rem; } }
     .header .heading-venue {
       font-size: 1.5rem;
       display: inline-block;
@@ -152,10 +166,13 @@ body {
 
 .program-section {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(164, 190, 205, 0.3)), url(imgs/brilliant.png);
-  padding: 6rem 0;
+  padding: 6rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 768px) {
+    .program-section {
+      padding: 6rem 0; } }
   .program-section .program-section__events {
     width: 100%;
     display: grid;
@@ -165,9 +182,7 @@ body {
       .program-section .program-section__events {
         width: 80%;
         margin: 3.5rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1rem; } }
+        grid-template-columns: repeat(2, 1fr); } }
     @media (min-width: 992px) {
       .program-section .program-section__events {
         grid-template-columns: repeat(4, 1fr); } }
@@ -199,14 +214,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 0; }
+  padding: 6rem 2rem; }
+  @media (min-width: 768px) {
+    .speaker-section {
+      padding: 6rem 0; } }
   .speaker-section-container {
     width: 80%;
     margin: 0 auto; }
   .speaker-section .speakers {
     display: grid;
-    grid-template-columns: repeat(2, 32rem);
+    grid-template-columns: 1fr;
     grid-gap: 3rem; }
+    @media (min-width: 768px) {
+      .speaker-section .speakers {
+        grid-template-columns: repeat(2, 32rem); } }
     .speaker-section .speakers__speaker {
       display: flex;
       justify-content: center; }

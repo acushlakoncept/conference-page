@@ -8,7 +8,11 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
+
+  @media (min-width: 768px) {
+    font-size: 62.5%;
+  }
 }
 
 body {
