@@ -7,11 +7,22 @@
   align-items: center;
 
   .program-section__events {
-    width: 80%;
-    margin: 3.5rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
+
+    @media (min-width: 768px) {
+      width: 80%;
+      margin: 3.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     &--item {
       background: rgba($blue-light, 0.2);
