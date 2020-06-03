@@ -1,7 +1,5 @@
 .speaker-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter;
   padding: 6rem 2rem;
 
   @media (min-width: 768px) {

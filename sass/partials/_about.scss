@@ -1,0 +1,13 @@
+.about-section {
+  @include flexCenter;
+
+  &__content {
+    width: 80%;
+
+    &--info {
+      font-size: 2rem;
+      font-weight: 100;
+      line-height: 1.7;
+    }
+  }
+}

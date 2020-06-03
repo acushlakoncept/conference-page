@@ -23,3 +23,15 @@
     }
   }
 }
+
+.otherpage-footer {
+  background-color: $blue-dark;
+
+  .footer__logo--img {
+    filter: brightness(1);
+
+    &:hover {
+      filter: brightness(3);
+    }
+  }
+}

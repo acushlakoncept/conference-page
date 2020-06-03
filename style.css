@@ -172,6 +172,17 @@ body {
   .section-button:hover {
     color: #fff; }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about-section__content {
+    width: 80%; }
+    .about-section__content--info {
+      font-size: 2rem;
+      font-weight: 100;
+      line-height: 1.7; }
+
 .program-section {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(164, 190, 205, 0.3)), url(imgs/brilliant.png);
   padding: 6rem 2rem;
@@ -299,3 +310,10 @@ body {
     color: #ccc; }
     .footer__copyright:hover {
       color: #031f37; }
+
+.otherpage-footer {
+  background-color: #031f37; }
+  .otherpage-footer .footer__logo--img {
+    filter: brightness(1); }
+    .otherpage-footer .footer__logo--img:hover {
+      filter: brightness(3); }

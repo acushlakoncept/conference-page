@@ -2,9 +2,7 @@
   &-section {
     background: linear-gradient(rgba($blue-light, 0.4), rgba($blue-dark, 0.5));
     padding: 8rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexCenter;
   }
 
   &-container {

@@ -2,9 +2,8 @@
   background: linear-gradient(105deg, rgba(#fff, 0.4), rgba($blue-light, 0.3)),
     url(imgs/brilliant.png);
   padding: 6rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @include flexCenter;
 
   @media (min-width: 768px) {
     padding: 6rem 0;
@@ -26,9 +25,7 @@
       background: rgba($blue-light, 0.2);
       font-size: 2rem;
       padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flexCenter;
       border-radius: 3px;
       box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
       transition: all 0.3s ease-in-out;
