@@ -128,21 +128,6 @@
     }
   }
 
-  &__list {
-    padding-right: 1rem;
-
-    &:last-child .nav__links {
-      border: 2px solid $blue-dark;
-      padding: 0.5rem;
-      border-radius: 3px;
-
-      &:hover {
-        background-color: $blue-dark;
-        color: $blue-light;
-      }
-    }
-  }
-
   &__links {
     &,
     &:link,
@@ -160,6 +145,21 @@
       color: $blue-dark;
       transform: translateY(-2px);
       border-bottom: 1px dotted $blue-dark;
+    }
+  }
+
+  &__list {
+    padding-right: 1rem;
+
+    &:last-child .nav__links {
+      border: 2px solid $blue-dark;
+      padding: 0.5rem;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: $blue-dark;
+        color: $blue-light;
+      }
     }
   }
 }
