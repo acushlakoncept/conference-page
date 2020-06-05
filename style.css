@@ -750,3 +750,7 @@ a {
 .otherpage-footer .footer__logo--img:hover {
   filter: brightness(3);
 }
+
+.otherpage-footer .footer__copyright:hover {
+  color: #a4becd;
+}

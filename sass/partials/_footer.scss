@@ -34,4 +34,10 @@
       filter: brightness(3);
     }
   }
+
+  .footer__copyright {
+    &:hover {
+      color: $blue-light;
+    }
+  }
 }
