@@ -143,9 +143,9 @@
     &.active,
     &:active,
     &:hover {
-      color: $blue-dark;
+      color: $red;
       transform: translateY(-2px);
-      border-bottom: 1px dotted $blue-dark;
+      border-bottom: 1px dotted $red;
     }
   }
 

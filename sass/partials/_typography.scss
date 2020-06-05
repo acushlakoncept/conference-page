@@ -13,7 +13,7 @@
   padding: 1.5rem;
   text-transform: uppercase;
   border: none;
-  background-color: $blue-dark;
+  background-color: $dark;
   color: $blue-light;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -22,4 +22,8 @@
   &:hover {
     color: #fff;
   }
+}
+
+.center-text {
+  text-align: center;
 }

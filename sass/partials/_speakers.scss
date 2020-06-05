@@ -50,10 +50,10 @@
       &--profile {
         font-weight: 100;
         font-style: italic;
-        color: #888;
+        color: $red;
 
         &:hover {
-          color: #555;
+          color: rgb(255, 0, 0);
         }
       }
 
