@@ -272,7 +272,39 @@ a {
     .about-section__content--info {
       font-size: 2rem;
       font-weight: 100;
-      line-height: 1.7; }
+      line-height: 1.7;
+      margin-bottom: 2rem; }
+  .about-section__event {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem; }
+    @media (min-width: 768px) {
+      .about-section__event {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5rem;
+        width: 80%;
+        margin: 0 auto; } }
+    .about-section__event--ev1, .about-section__event--ev2 {
+      height: 30rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem; }
+    .about-section__event--ev1 {
+      background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.75)), url(imgs/cyfrica_event.jpg) no-repeat;
+      background-size: cover; }
+    .about-section__event--ev2 {
+      background: linear-gradient(rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.75)), url(imgs/cyfrica_event2.jpg) no-repeat;
+      background-size: cover; }
+    .about-section__event--year {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 700; }
+    .about-section__event--location {
+      font-size: 2rem;
+      color: #fff; }
 
 .program-section {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(164, 190, 205, 0.3)), url(imgs/brilliant.png);

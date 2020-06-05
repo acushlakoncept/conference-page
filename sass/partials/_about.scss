@@ -8,6 +8,52 @@
       font-size: 2rem;
       font-weight: 100;
       line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__event {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2.5rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &--ev1,
+    &--ev2 {
+      height: 30rem;
+      text-align: center;
+      @include flexCenter;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    &--ev1 {
+      background: linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
+        url(imgs/cyfrica_event.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    &--ev2 {
+      background: linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
+        url(imgs/cyfrica_event2.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    &--year {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    &--location {
+      font-size: 2rem;
+      color: #fff;
     }
   }
 }
