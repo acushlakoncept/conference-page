@@ -1,0 +1,174 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background:
+    linear-gradient(
+      105deg,
+      rgba($blue-dark, 0.95) 50%,
+      rgba($blue-light, 0.3) 80%
+    ),
+    url(imgs/hero-small.jpg) no-repeat;
+  background-size: cover;
+  background-position: left top;
+
+  @media (min-width: 768px) {
+    background:
+      linear-gradient(
+        105deg,
+        rgba($blue-dark, 0.95) 50%,
+        rgba($blue-light, 0.3) 80%
+      ),
+      url(imgs/hero-big.jpg) no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+
+  &.no-image {
+    height: 7.5rem;
+  }
+
+  .top-bar {
+    display: none;
+    background-image: linear-gradient(120deg, $black 50%, $blue-dark 51%);
+    height: 2.5rem;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 0.5rem;
+      width: 80%;
+      margin: auto;
+    }
+
+    &__list {
+      margin-right: 1rem;
+    }
+
+    &__links {
+      color: $gray;
+
+      &:hover {
+        color: $blue-light;
+      }
+
+      .fab {
+        color: #fff;
+
+        &:hover {
+          color: $blue-light;
+        }
+      }
+    }
+  }
+
+  .logo-img {
+    width: auto;
+    height: 7rem;
+  }
+
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $blue-light;
+
+    &--theme {
+      color: $gray;
+      font-size: 2rem;
+      font-weight: 100;
+    }
+  }
+
+  .heading {
+    max-width: 76.8rem;
+
+    &-sub,
+    &-theme,
+    &-primary,
+    &-date,
+    &-venue {
+      color: $blue-light;
+      padding: 1rem 0;
+    }
+
+    &-sub {
+      font-size: 3rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: $red;
+    }
+
+    &-primary {
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 5rem;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      background-position: top right;
+      color: $black;
+      text-shadow: 0 2rem 4rem rgba($black, 0.3);
+      z-index: 50;
+
+      @media (min-width: 768px) {
+        font-size: 8rem;
+      }
+
+      &::after {
+        content: "DEF CON UYO - NIGERIA 2020";
+        background:
+          linear-gradient(rgba($red, 0.6), rgba($blue-light, 0.6)),
+          url(imgs/dcsite-bg-ret.jpg);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: absolute;
+        z-index: 100;
+        top: 1px;
+        left: 1.5px;
+      }
+    }
+
+    &-theme {
+      font-size: 2rem;
+    }
+
+    &-date {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -2px;
+
+      @media (min-width: 768px) {
+        font-size: 5rem;
+      }
+    }
+
+    &-venue {
+      font-size: 1.5rem;
+      display: inline-block;
+      background-color: rgba($blue-dark, 0.85);
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    &-support {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+
+      &__mail {
+        color: $blue-light;
+        font-weight: 100;
+        font-size: 2rem;
+      }
+    }
+  }
+}

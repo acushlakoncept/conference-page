@@ -1,0 +1,60 @@
+.program-section {
+  background:
+    linear-gradient(105deg, rgba(#fff, 0.4), rgba($blue-light, 0.3)),
+    url(imgs/brilliant.png);
+  padding: 6rem 2rem;
+
+  @include flexCenter;
+
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
+
+  .program-section__events {
+    width: 100%;
+    margin-bottom: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @media (min-width: 768px) {
+      width: 85%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--item {
+      background: rgba($blue-light, 0.2);
+      font-size: 2rem;
+      padding: 2rem;
+
+      @include flexCenter;
+
+      border-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: rgba($blue-light, 0.4);
+        box-shadow: 0 1px 0.5rem rgba($black, 0.2);
+      }
+    }
+
+    &-icon {
+      font-size: 6rem;
+
+      .fa {
+        color: rgba($blue-dark, 0.8);
+      }
+    }
+
+    &-title {
+      color: $red;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+    &-info {
+      font-weight: 300;
+    }
+  }
+}

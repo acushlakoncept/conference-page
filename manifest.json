@@ -1,0 +1,16 @@
+{
+  "name": "DEF CON Uyo - Nigeria 2020",
+  "short_name": "DC234",
+  "description": "DEF CON Uyo - Nigeria 2020 is 2 day event will bridge the gap between the leading security solution providers and security professionals by bringing them onto the same pedestal",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#031c32",
+  "icons": [
+    {
+      "src": "https://github.com/acushlakoncept/conference-page/blob/feature-index/imgs/defcon_logo_nt.png?raw=true",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

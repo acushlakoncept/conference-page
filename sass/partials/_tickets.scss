@@ -1,0 +1,89 @@
+.ticket-section {
+  &__content {
+    @include flexCenter;
+  }
+
+  &__step {
+    margin: 3rem 0;
+    padding: 1.2rem;
+    display: inline-flex;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid $blue-light;
+    border-radius: 20rem;
+    font-weight: 300;
+
+    &-guide {
+      color: red;
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+  }
+
+  &__price {
+    background-image: linear-gradient(105deg, orangered, $blue-dark);
+    padding: 0.8rem;
+
+    &--container {
+      background-color: #fff;
+      padding: 0.5rem;
+    }
+
+    &--table {
+      font-size: 1.2rem;
+
+      tr {
+        td,
+        th {
+          text-align: center;
+        }
+      }
+    }
+
+    &--label {
+      display: block;
+    }
+  }
+}
+
+.lunch-section {
+  padding: 6rem 0;
+
+  &__menu {
+    border: 1px solid $blue-light;
+    max-width: 95%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+
+    &--titlebar {
+      background-color: #eee;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--title {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    &--form {
+      padding: 1rem;
+    }
+
+    &--item {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--list {
+      padding-right: 2rem;
+    }
+
+    &--label {
+      padding-right: 1rem;
+    }
+  }
+}

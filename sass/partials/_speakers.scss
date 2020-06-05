@@ -1,0 +1,65 @@
+.speaker-section {
+  @include flexCenter;
+
+  padding: 6rem 2rem;
+
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
+
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 32rem);
+    }
+
+    &__speaker {
+      display: flex;
+      justify-content: center;
+
+      &--photo {
+        height: 12rem;
+        border-radius: 2rem;
+        transition: all 0.4s;
+
+        &:hover {
+          transform: translateY(-1px) scale(1.1);
+        }
+      }
+
+      &--info {
+        align-self: center;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      &--name {
+        font-weight: 700;
+        color: $blue-dark;
+      }
+
+      &--profile {
+        font-weight: 100;
+        font-style: italic;
+        color: $red;
+
+        &:hover {
+          color: rgb(255, 0, 0);
+        }
+      }
+
+      &--bio {
+        text-align: justify;
+      }
+    }
+  }
+}
