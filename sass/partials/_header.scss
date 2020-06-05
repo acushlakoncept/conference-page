@@ -1,7 +1,8 @@
 .header {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       105deg,
       rgba($blue-dark, 0.95) 50%,
       rgba($blue-light, 0.3) 80%
@@ -11,7 +12,8 @@
   background-position: left top;
 
   @media (min-width: 768px) {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         105deg,
         rgba($blue-dark, 0.95) 50%,
         rgba($blue-light, 0.3) 80%
@@ -120,7 +122,8 @@
 
       &::after {
         content: "DEF CON UYO - NIGERIA 2020";
-        background: linear-gradient(rgba($red, 0.6), rgba($blue-light, 0.6)),
+        background:
+          linear-gradient(rgba($red, 0.6), rgba($blue-light, 0.6)),
           url(imgs/dcsite-bg-ret.jpg);
         -webkit-background-clip: text;
         -moz-background-clip: text;

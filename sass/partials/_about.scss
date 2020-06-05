@@ -28,19 +28,23 @@
     &--ev2 {
       height: 30rem;
       text-align: center;
+
       @include flexCenter;
+
       justify-content: center;
       padding: 1rem;
     }
 
     &--ev1 {
-      background: linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
+      background:
+        linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
         url(imgs/cyfrica_event.jpg) no-repeat;
       background-size: cover;
     }
 
     &--ev2 {
-      background: linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
+      background:
+        linear-gradient(rgba($red, 0.7), rgba($red, 0.75)),
         url(imgs/cyfrica_event2.jpg) no-repeat;
       background-size: cover;
     }
