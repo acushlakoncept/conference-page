@@ -28,8 +28,11 @@ I have also included the manifest.json file for the web, which holds some metada
 - Manifest
 
 ## Live Demo
-
 [Live Demo Link](https://defconuyo.netlify.app/)
+
+
+## Video Description
+[Video Description](https://www.loom.com/share/fd96c7220f464cc18386ee3834e2f55d)
 
 ## Getting Started
 
